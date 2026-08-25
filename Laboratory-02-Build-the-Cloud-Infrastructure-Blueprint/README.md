@@ -2,15 +2,16 @@
 
 ## Mission Overview
 
-This laboratory focused on understanding the basic components of cloud infrastructure and how compute, storage, networking, and operating systems work together.
+To investigate the components of cloud infrastructure, identify how compute, storage, networking, and identity services work together, and document your findings as if you were preparing technical documentation for a client. 
 
 ## Objectives
 
-- Understand major cloud infrastructure components.
-- Investigate a Linux cloud environment.
-- Compare cloud providers.
-- Design a simple cloud infrastructure.
-- Document technical findings using Markdown.
+- Explain the major components of cloud infrastructure.  
+- Investigate the hardware and software resources available in a Linux environment.  
+- Differentiate compute, storage, networking, and identity resources.  
+- Interpret the relationship between cloud infrastructure components.  
+- Create professional technical documentation using Markdown.  
+- Continue building a structured GitHub Cloud Computing Portfolio. 
 
 ## Cloud Infrastructure Components
 
@@ -32,6 +33,7 @@ The main infrastructure components investigated were compute, storage, networkin
 - `nproc`
 - `free -h`
 - `df -h`
+- `df -h /`
 - `hostname`
 - `hostname -I`
 
@@ -41,4 +43,4 @@ I learned how to inspect a Linux cloud environment, identify infrastructure reso
 
 ## Challenges Encountered
 
-One challenge was understanding the different names used by AWS, Azure, and Google Cloud for similar services. I also had to become familiar with Linux commands for checking system resources and network information.
+One challenge was understanding the different names used by AWS, Azure, and Google Cloud for similar services. 
