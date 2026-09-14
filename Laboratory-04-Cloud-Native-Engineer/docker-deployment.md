@@ -1,4 +1,4 @@
-## Docker Environment
+### Docker Environment
 
 The Docker environment was accessed through the KillerCoda Playground. Before deploying the Nginx web server, I checked if Docker was installed and running.
 
