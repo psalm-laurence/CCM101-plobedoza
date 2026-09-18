@@ -4,9 +4,8 @@
 
 I used Docker to download and run the MinIO object storage server.
 
-```bash
-docker run -d -p 9000:9000 -p 9001:9001 --name minio-server -e "MINIO_ROOT_USER=cloudadmin" -e "MINIO_ROOT_PASSWORD=CloudNova2026!" minio/minio server /data --console-address ":9001"
-```
+` docker run -d -p 9000:9000 -p 9001:9001 --name minio-server -e "MINIO_ROOT_USER=cloudadmin" -e "MINIO_ROOT_PASSWORD=CloudNova2026!" minio/minio server /data --console-address ":9001" `
+
 
 The command creates a MinIO container and runs it in detached mode.
 
@@ -14,9 +13,8 @@ The command creates a MinIO container and runs it in detached mode.
 
 I used the following command to check if the MinIO container was running:
 
-```bash
-docker ps
-```
+` docker ps `
+
 
 This command displays the currently running Docker containers. The MinIO container should have a status showing that it is running.
 
@@ -24,9 +22,8 @@ This command displays the currently running Docker containers. The MinIO contain
 
 The MinIO Web Console was accessed using:
 
-```text
-Port: 9001
-```
+` Port: 9001 `
+ 
 
 Port 9001 was mapped from the host to the MinIO Web Console port.
 
@@ -34,24 +31,20 @@ Port 9001 was mapped from the host to the MinIO Web Console port.
 
 The credentials were defined using environment variables in the Docker command.
 
-```text
-Username: cloudadmin
-Password: CloudNova2026!
-```
+
+` Username: cloudadmin
+Password: CloudNova2026! `
+
 
 ## 5. Environment Variables
 
 The `-e` flags are used to set environment variables inside the Docker container.
 
-```bash
--e "MINIO_ROOT_USER=cloudadmin"
-```
+` -e "MINIO_ROOT_USER=cloudadmin" `
 
 This sets the MinIO administrator username.
 
-```bash
--e "MINIO_ROOT_PASSWORD=CloudNova2026!"
-```
+` -e "MINIO_ROOT_PASSWORD=CloudNova2026!" `
 
 This sets the MinIO administrator password.
 
@@ -61,9 +54,7 @@ Using environment variables allows the MinIO container to receive its configurat
 
 The storage bucket created for the client was:
 
-```text
-client-photos
-```
+` client-photos `
 
 The bucket was created through the MinIO Web Console and a sample file was uploaded successfully.
 
