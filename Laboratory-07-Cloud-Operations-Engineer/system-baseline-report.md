@@ -10,9 +10,9 @@ The server has a total of **1.9Gi** of available RAM.
 
 I used the following command:
 
-```bash
+``
 free -h
-```
+``
 
 ### Disk Storage
 
@@ -20,17 +20,17 @@ The root (`/`) file system has a total storage capacity of **19G**.
 
 I used the following command:
 
-```bash
+``
 df -h /
-```
+``
 
 ### CPU and Processes
 
 I used the following command to view active processes and CPU activity:
 
-```bash
+``
 top
-```
+``
 
 The command allowed me to observe the server's CPU usage and running processes in real time.
 
