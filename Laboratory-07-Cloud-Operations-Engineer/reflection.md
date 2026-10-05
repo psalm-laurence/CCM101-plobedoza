@@ -1,32 +1,11 @@
-# Laboratory 07 - The Cloud Operations Engineer
+# Reflection
 
-## Mission Overview
+This activity helped me understand why checking the host server is important even when the containers themselves are running normally. A container can be working properly, but the host server could still have high CPU usage, low memory, or limited disk space. Checking these resources gives the Cloud Operations Engineer an idea of whether the server can handle more workload and helps prevent possible problems.
 
-Congratulations! Your ability to deploy multi-tier architectures has proven your technical capabilities. You have now been promoted to the Cloud Operations Team (often referred to in the industry as Site Reliability Engineering, or SRE) at CloudNova Technologies. Deploying a cloud application is only the first step; keeping it running smoothly is the real challenge. When a server crashes or a web page takes ten seconds to load, you cannot simply guess what is wrong. You 
-must rely on Observability and Monitoring to see inside your infrastructure. Using the KillerCoda Playground, you will step into the role of a Cloud Operations Engineer. You will establish a performance baseline for your Linux server, deploy a containerized application, generate artificial web traffic, and hunt down performance metrics and system logs to prove the application is healthy. 
+I also learned how useful the `docker logs` command can be when troubleshooting an application. If a user cannot log into a web application, I can check the container logs to see if there are errors or failed requests. The logs can give information about what happened and can help narrow down the possible cause of the problem instead of just guessing.
 
-## Objectives
-At the end of this laboratory activity, you should be able to: 
-* Utilize native Linux command-line tools to monitor host CPU, Memory, and Disk capacity. 
-* Deploy a web container and track its real-time performance using Docker metrics. 
-* Generate web traffic and extract application access logs for analysis. 
-* Translate raw performance data into a readable technical report using Markdown. 
-* Continue expanding a professional GitHub Cloud Computing Portfolio. 
+Logs and metrics are also different types of monitoring information. Logs show specific events that happened in the application, such as HTTP requests and errors. Metrics provide numerical information about the system, such as CPU usage, memory usage, and network activity. Using both is useful because they give different views of the application's health.
 
-## Monitoring Commands Executed
+For large companies with thousands of containers, manually checking every container would not be practical. They can use monitoring and observability tools such as Prometheus and Grafana to collect, organize, and display metrics from many systems in one place. These tools can help engineers notice problems more quickly and monitor large cloud environments.
 
-```bash
-free -h
-df -h /
-top
-docker run -d -p 8080:80 --name client-website nginx
-docker ps
-curl http://localhost:8080
-curl http://localhost:8080/hidden-admin-page
-docker logs client-website
-docker stats
-```
-
-## Skills Learned
-
-Through this activity, I learned how to check the basic health of a Linux server and monitor a running Docker container. I also learned how to generate test web traffic, read application logs, and check real-time CPU and memory usage. These skills helped me understand how Cloud Operations Engineers use observability to troubleshoot and monitor applications.
+My troubleshooting skills in Linux have also improved compared to when I started the first mission. I am now more comfortable using commands to check system resources, run Docker containers, generate requests, and inspect logs. I have learned that troubleshooting is not just about finding an error but also collecting information and using that information to understand what is happening. This activity made me more confident working with Linux and Docker.
