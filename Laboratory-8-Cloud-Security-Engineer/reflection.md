@@ -1,1 +1,9 @@
+# Reflection
 
+This activity helped me understand how a host-based firewall adds another layer of security to a server. Even if an attacker gets past the physical network perimeter, the firewall installed on the server can still control which incoming connections are allowed. By blocking unnecessary traffic and allowing only required services, the server has better protection against unauthorized access.
+
+I also learned why managing open network ports is important for reducing the attack surface. Every open port may expose a service that an attacker could try to exploit. If a server has ports open that are not needed, it creates additional opportunities for attacks. Using UFW and allowing only the required ports, such as SSH for administration and port 8080 for the web application, helps reduce these risks. However, firewall rules should also be reviewed regularly as the server's requirements change.
+
+In an enterprise environment, leaving a database port such as MySQL's port 3306 open to the public internet can be dangerous. Attackers may try to guess database passwords, exploit software vulnerabilities, or access sensitive information if the database is not properly secured. A database often contains private customer details and important business records, so unauthorized access could cause serious damage. A safer approach is to restrict database access to trusted application servers or private networks and avoid exposing the database directly to the public internet.
+
+Overall, this activity improved my understanding of basic cloud server security. I learned how to configure UFW, apply a Default Deny policy, and allow only specific network ports. It also showed me that securing a server requires more than deploying an application. Administrators must review exposed services, apply appropriate access rules, and continue monitoring the server to maintain its security.
